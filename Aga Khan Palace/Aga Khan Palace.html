@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Aga Khan Palace</title>
+	<style>
+		::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 40px;
+		border: 2px solid
+		}
+		::-webkit-scrollbar-track {
+		  background: #F1F1F1; 
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #888; 
+		}
+		::-webkit-scrollbar-thumb:hover {
+		  background: #555;
+		  float: right;
+		  top: 340px;
+		  right: 10px;
+		}
+		.mySlides {
+			display:none;
+		}
+		body{
+			border-radius: 150px; 
+			background-image: url('wallpaper.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card m-4">
+			<div class="card-body">
+				<hr>
+				<center><h1 class="pt-4" style="color: #808080;"><i><b>Aga Khan Palace</b></i></h1></center>
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="pic1.JPG" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic2.jpg" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic3.jpg" style="width:1000px; height:500px">
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				</div>	
+				<h3 class="pt-4">Category: Historical Place</h3><br>
+				<p><i><b>About Place:</b><br>Agakhan Palace is one of the most beautiful architectural monuments you'll find in Pune. Constructed in 1892, this white building stands tall amidst the greenery. The palace was built by Sultan Muhammed Shah Aga Khan III in act of charity to help the poor people living in the neighborhood of people who were hit severely by famine. Agakhan Palace is also a monument of national importance as it served as a prison for freedom fighters Mahatma Gandhi, Kasturba Gandhi, Sarojini Naidu & Mahadev Desai.It takes around an hour to take a tour of the palace.</i></p><br>
+				<a href="https://www.google.com/maps/place/Aga+Khan+Palace/@18.5524942,73.8992676,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2c11768711b1b:0xac1ba97447d569f4!8m2!3d18.5524942!4d73.9014563?hl=en" target="_blank"><img src="maps.png" width="50px" height="50px"></a><br>
+				<i><b>Season to visit:</b>  Anytime.</i><br>
+				<i><b>Preferred time:</b> 9:00 AM to 5:30 PM, 7 days a week.</i><br>
+				<i><b>Type :</b> Family, Friends</i><br>
+				<i><b>Famous For :</b><br>a)Belongings of Mahatma Gandhi & Kasturba Gandhi<br>b)Gandhi's ashes<br>c) Beautiful garden & lawn around this palace.<br>d)Photos & paintings that give you a glimpse of Gandhi's life. </i><br><hr>
+				Author : Siddhant Sonawane
+			</div>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+  		showDivs(slideIndex += n);
+					}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+	</script>
+</body>
+</html>

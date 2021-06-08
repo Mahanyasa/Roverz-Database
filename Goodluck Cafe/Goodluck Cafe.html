@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Goodluck Cafe</title>
+	<style>
+		::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 40px;
+		border: 2px solid
+		}
+		::-webkit-scrollbar-track {
+		  background: #F1F1F1; 
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #888; 
+		}
+		::-webkit-scrollbar-thumb:hover {
+		  background: #555;
+		  float: right;
+		  top: 340px;
+		  right: 10px;
+		}
+		.mySlides {
+			display:none;
+		}
+		body{
+			border-radius: 150px; 
+			background-image: url('wallpaper.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card m-4">
+			<div class="card-body">
+				<hr>
+				<center><h1 class="pt-4" style="color: #808080;"><i><b>Goodluck Cafe</b></i></h1></center>
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="pic1.JPG" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic2.png" style="width:1000px; height:500px">
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				</div>	
+				<h3 class="pt-4">Category: Food</h3><br>
+				<p><i><b>About Place:</b><br>Cafe GoodLuck is a popular Irani cafe-restaurant on the Fergusson College Road, in the Deccan Gymkhana area of Pune, India. Established in 1935 by Hussain Ali Yakshi, it is one of the oldest Irani places in Pune. was perhaps the first garden restaurant in Pune with 40-odd tables. Cafe GoodLuck is most famous for its bun maska/bun omelette and Iranian tea among the other dishes. The place is always crowded and especially popular among the youngsters. Cafe GoodLuck has no other branch.</i></p><br>
+				<a href="https://www.google.com/maps/place/Cafe+Goodluck/@18.5174361,73.8392641,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2bf87fad7cce1:0x782ac3a113379b17!8m2!3d18.5174361!4d73.8414528?hl=en" target="_blank"><img src="maps.png" width="50px" height="50px"></a><br>
+				<i><b>Season to visit:</b>  Any</i><br>
+				<i><b>Preferred time:</b> 9:00 am - 11:00pm</i><br>
+				<i><b>Type :</b> Family, Friends</i><br>
+				<i><b>Famous For:</b>Bun maska/Bun omelette /Iranian tea / Kheema Pav</i><hr>
+				Author : Siddhant Sonawane
+			</div>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+  		showDivs(slideIndex += n);
+					}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+	</script>
+</body>
+</html>

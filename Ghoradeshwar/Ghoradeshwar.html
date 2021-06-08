@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Ghoradeshwar</title>
+		<style>
+			::-webkit-scrollbar {
+			width: 5px;
+			border-radius: 40px;
+			border: 2px solid
+			}
+			::-webkit-scrollbar-track {
+			  background: #F1F1F1; 
+			}
+			::-webkit-scrollbar-thumb {
+			  background: #888; 
+			}
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555;
+			  float: right;
+			  top: 340px;
+			  right: 10px;
+			}
+			body{
+				border-radius: 150px; 
+				background-image: url('wallpaper.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card m-4">
+			<div class="card-body">
+			<hr>
+			<center>
+				<h1 class="pt-4" style="color: #808080;"><i><b>Ghoradeshwar</b></i></h1>
+			</center>
+			<div class="w3-content w3-display-container">
+				<img class="mySlides" src="pic1.jpg" style="width:1000px; height:500px">
+				<img class="mySlides" src="pic2.jpg" style="width:1000px; height:500px">
+				<img class="mySlides" src="pic3.jpg" style="width:1000px; height:500px">					
+				<img class="mySlides" src="pic4.jpg" style="width:1000px; height:500px">
+				<img class="mySlides" src="pic5.jpg" style="width:1000px; height:500px">
+				<img class="mySlides" src="pic6.jpg" style="width:1000px; height:500px">
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+			</div>
+			<h3 class="pt-4">Category: trekking</h3><br>
+			<p><i><b>About Place:</b><br>It is a small mountain where one can trek 15min to reach the top and the view is magnificent. One can also get a FANTASTIC view of MCA stadium the place where INDIA whitewashed Aussie in the test. Also you get to see the city lights if you climb before sunrise. If it's your 1st time going up, mark my words you “WILL NOT BE DISAPPOINTED”.</i></p><br>
+			<a href="https://www.google.com/maps/place/Ghoradeshwar/@18.6889952,73.5678174,11.9z/data=!4m5!3m4!1s0x3bc2b0f8e476209d:0x9465c0d58b225937!8m2!3d18.6923897!4d73.7040288" target="_blank"><img src="maps.png" width="50px" height="50px"></a><br>
+			<i><b>Season to visit:</b>  Any</i><br>
+			<i><b>Preferred time:</b> Early Morning / Evening.</i><br>
+			<i><b>Type :</b> Friends, Family</i><br><hr>
+			Author : Siddhant Sonawane
+			</div>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+  		showDivs(slideIndex += n);
+					}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+	</script>
+</body>
+</html>

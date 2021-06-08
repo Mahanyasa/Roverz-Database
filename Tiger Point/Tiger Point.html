@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Tiger Point</title>
+	<style>
+		::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 40px;
+		border: 2px solid
+		}
+		::-webkit-scrollbar-track {
+		  background: #F1F1F1; 
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #888; 
+		}
+		::-webkit-scrollbar-thumb:hover {
+		  background: #555;
+		  float: right;
+		  top: 340px;
+		  right: 10px;
+		}
+		.mySlides {
+			display:none;
+		}
+		body{
+			border-radius: 150px; 
+			background-image: url('wallpaper.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card m-4">
+			<div class="card-body">
+				<hr>
+				<center><h1 class="pt-4" style="color: #808080;"><i><b>Tiger Point</b></i></h1></center>
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="pic1.JPG" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic2.jpg" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic3.jpg" style="width:1000px; height:500px">
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				</div>	
+				<h3 class="pt-4">Category: Hill Station</h3><br>
+				<p><i><b>About Place:</b><br>The point derives its name from its resemblance to the shape of a leaping tiger. It offers spectacular views of forests, lush greenery, waterfalls and lakes around. ... There is a small waterfall near to this viewpoint, which flows during the monsoon months only. One can view great Sunrise, Sunset.</i></p><br>
+				<a href="https://www.google.com/maps/place/Tiger+Point+Lonavala/@18.6960869,73.3677255,14z/data=!4m9!1m2!2m1!1stiger+point+lonavala!3m5!1s0x3be803ec63c748df:0xb440dcf326c3e04a!8m2!3d18.6960869!4d73.385235!15sChR0aWdlciBwb2ludCBsb25hdmFsYVosChR0aWdlciBwb2ludCBsb25hdmFsYSIUdGlnZXIgcG9pbnQgbG9uYXZhbGGSAQxoaWxsX3N0YXRpb26aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnJjMjk1V1RWUlJSQUI" target="_blank"><img src="maps.png" width="50px" height="50px"></a><br>
+				<i><b>Season to visit:</b>   Monsoon.</i><br>
+				<i><b>Preferred time:</b> Any</i><br>
+				<i><b>Type :</b> Family, Friends</i><br><hr>
+				Author : Siddhant Sonawane
+			</div>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+  		showDivs(slideIndex += n);
+					}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+	</script>
+</body>
+</html>

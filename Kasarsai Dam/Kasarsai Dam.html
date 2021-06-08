@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Kasarsai Dam</title>
+	<style>
+		::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 40px;
+		border: 2px solid
+		}
+		::-webkit-scrollbar-track {
+		  background: #F1F1F1; 
+		}
+		::-webkit-scrollbar-thumb {
+		  background: #888; 
+		}
+		::-webkit-scrollbar-thumb:hover {
+		  background: #555;
+		  float: right;
+		  top: 340px;
+		  right: 10px;
+		}
+		.mySlides {
+			display:none;
+		}
+		body{
+			border-radius: 150px; 
+			background-image: url('wallpaper.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card m-4">
+			<div class="card-body">
+				<hr>
+				<center><h1 class="pt-4" style="color: #808080;"><i><b>Kasarsai Dam</b></i></h1></center>
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="pic1.JPG" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic2.jpg" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic3.jpg" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic4.jpg" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic5.jpg" style="width:1000px; height:500px">
+					<img class="mySlides" src="pic6.jpg" style="width:1000px; height:500px">
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				</div>	
+				<h3 class="pt-4">Category: Small Dam</h3><br>
+				<p><i><b>About Place:</b><br>Kasarsai dam is a  small dam situated near to Hinjewadi IT park, one of the largest IT parks in India. It is located in west Pune. The location is close to residential hubs of the city yet away from the city buzz  and rush.The special thing about this place is the peaceful surrounding. It's perfect for a quick trip because of being near to the city. The sun-rise and sun-set is awesome.One can also swim in the dam if he/she knows how to swim.</i></p><br>
+				<a href="https://www.google.com/maps/place/Kasarsai+Dam/@18.6211232,73.6424241,15z/data=!3m1!4b1!4m5!3m4!1s0x3bc2a5337dc3207b:0xc98e3ed299888019!8m2!3d18.6200891!4d73.6550926?hl=en" target="_blank"><img src="maps.png" width="50px" height="50px"></a><br>
+				<i><b>Season to visit:</b>  Anytime</i><br>
+				<i><b>Preferred time:</b> During sunrise , sunset</i><br>
+				<i><b>Type :</b> Family ,Friends</i><br><hr>
+				Author : Siddhant Sonawane
+			</div>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+  		showDivs(slideIndex += n);
+					}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+	</script>
+</body>
+</html>
